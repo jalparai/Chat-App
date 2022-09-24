@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Jeeni Chatapp</title>
+    <link rel="stylesheet" href="./css.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap"
+      rel="stylesheet"
+    /> -->
+    <script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="./firebase-init.js"></script>
+  </head>
+  <body>
+    <div id="main_home">
+      <h1 class="wlc_page">
+       Welcome To Jeeni Chat 
+    </h1>
+      <div class="sec_1">
+
+        <img src="./images/Smiling_Devil_Emoji.png" width="200px" height="200px" alt="">
+      </div>
+
+        <div class="btn_sec">
+          <!-- <input type="text" class="form-control" placeholder="Email"  id="email">
+          <input type="Password" class="form-control" placeholder="Password"  id="password">
+          <button onclick="login()">Submit</button> -->
+
+          <!-- <button onclick="goChat()" class="btn_start">Start Chat</button> -->
+          <!-- <button id="login" class="btn_start" id="signin" onclick="googleLogin()">sign with google</button> -->
+<a href="./pages/login.html" class="btn_start">Click To Chat </a>
+ 
+        </div>
+      </div>
+  
+
+    <script>
+      function goChat() {
+        window.location.href = "./chat.html";
+      }
+    </script>
+    <!-- <script src="./js.js"></script>
+    <script src="./Signin.js"></script> -->
+    <!-- <script src="./chat js/signinwithfb.js"></script> -->
+  </body>
+</html>

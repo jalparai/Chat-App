@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeeni Chatapp</title>
+    <link rel="stylesheet" href="../css.css">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&family=JetBrains+Mono:ital,wght@0,200;1,200&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    
+    <script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+
+    <script src="../firebase-init.js"></script>
+
+</head>
+<body>
+    
+    <div  id="container" class="mesg_container">
+ <!-- <img src="" alt="" srcset="">      -->
+        <div class="Chat_logo">
+            <span class="logout" onclick="logout()">
+              <img src="../images/power-off (1).png" alt="">
+            </span>
+            <img src="../images/Smiling_Devil_Emoji.png" width="80px" height="80px" alt="">
+           
+            <div class="del_btn">
+                <span onclick="removeall()">
+                    <img src="../images/delete.png" alt="" srcset="" class="imgIcon" >
+                
+                </span>
+                  
+            </div>
+
+        </div>
+      
+<!-- <div class="loader" id="loader"></div> -->
+        <br><br><br><br><br>
+        <div class="img">
+        <span style="display:block;width:120px; height:30px;" onclick="document.getElementById('getFile').click()"><img src="../images/upload (2).png" class="imgIcon" id="icon_img" alt="" srcset=""></span>
+        <input type='file' accept="image/*, video/*" id="getFile" style="display:none" id="img" onchange="imageupload(this)">
+        <div class="loader" id="loader"></div>
+        <button id="uploadarrow" onclick="img()" class="arrow">
+            <img src="../images/upload.png" class="arrowImg"  alt="" srcset="" >
+
+        </button>
+    </div>
+     
+</div>
+
+
+
+
+    <div class="input_sec" id="">
+       
+        <input 
+        placeholder="enter message"
+        id="input_1"
+        autocomplete="off"
+        class="text_input"
+
+        /> 
+        <button onclick="sendMessage()" class="send_icon" id="sender">
+          <img src="../images/send.png" alt="">
+           </button>
+
+
+       
+
+
+           <!-- <input type="file" name="imge" id="img" onchange="imageupload(this)"> -->
+
+    </div>
+<br />
+<script src="../js.js"></script>
+</body>
+</html>
